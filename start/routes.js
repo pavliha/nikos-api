@@ -16,4 +16,5 @@
 /** @type {typeof import('@adonisjs/framework/src/Route/Manager')} */
 const Route = use('Route')
 
-Route.resource('/pictures','PictureController')
+Route.resource('/photos', 'PhotoController')
+Route.patch('/photos', 'PhotoController.sort')
